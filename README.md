@@ -4,8 +4,8 @@ geodevops Infra repository
 ВЫПОЛНЕНО ДЗ №3 Задача: Исследовать способ подключения к someinternalhost в одну команду из вашего рабочего устройства, проверить работоспособность найденного решения и внести его в README.md в вашем репозитории
 Решение:
 
-bastion_IP=178.154.207.203
-someinternalhost_IP=10.128.0.19
+bastion_IP=130.193.50.148
+someinternalhost_IP=10.129.0.26
 ssh -J root@$bastion_IP root@$someinternalhost_IP
 
 Задача: Предложить вариант решения для подключения из консоли при помощи команды вида ssh someinternalhost из локальной консоли рабочего устройства, чтобы подключение выполнялось по алиасу someinternalhost и внести его в README.md в вашем репозитории
@@ -14,10 +14,10 @@ ssh -J root@$bastion_IP root@$someinternalhost_IP
 Создать файл ~/.ssh/config и прописать следующее
 
 Host someinternalhost
-HostName 10.128.0.19
+HostName 10.129.0.26
 User appuser
 ProxyCommand ssh -A appuser@bastion nc %h %p
 
 Host bastion
-HostName 178.154.207.203
+HostName 130.193.50.148
 User appuser
