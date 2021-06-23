@@ -21,3 +21,8 @@ ProxyCommand ssh -A appuser@bastion nc %h %p
 Host bastion
 HostName 130.193.50.148
 User appuser
+
+ВЫПОЛНЕНО ДЗ №4
+
+testapp_IP = 178.154.252.106
+testapp_port = 9292
