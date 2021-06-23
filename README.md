@@ -24,5 +24,5 @@ User appuser
 
 ВЫПОЛНЕНО ДЗ №4
 
-testapp_IP = 178.154.252.106
+testapp_IP = 178.154.226.235
 testapp_port = 9292
