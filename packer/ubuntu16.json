@@ -1,13 +1,14 @@
 {
+
     "builders": [
         {
             "type": "yandex",
-            "service_account_key_file": "/home/oleg/OTUS/kyes/packer/key.json",
-            "folder_id": "b1g3bastprflpmc7m3a5",
-	    "zone":      "ru-central1-a",
-	    "subnet_id": "e9b6jsv5mc6ugbd2p385",
-	    "use_ipv4_nat": true,
-            "source_image_family": "ubuntu-1604-lts",
+            "service_account_key_file": "{{user `key_file`}}",
+            "folder_id": "{{user `myfolder_id`}}",
+	        "zone":      "ru-central1-a",
+	        "subnet_id": "{{user `subnet_id`}}",
+	        "use_ipv4_nat": true,
+            "source_image_family": "{{user `source_image_family`}}",
             "image_name": "reddit-base-{{timestamp}}",
             "image_family": "reddit-base",
             "ssh_username": "ubuntu",
