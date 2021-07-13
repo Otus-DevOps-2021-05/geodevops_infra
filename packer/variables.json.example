@@ -1,6 +1,6 @@
 {
     "myfolder_id": "1234567890cc40vndnc3",
-    "keyi_file": "example.key.json",
+    "key_file": "example.key.json",
     "source_image_family": "ubuntu-1604-lts",
     "subnet_id": "e9b6jsv5mc6ugbd2p385"
 }
