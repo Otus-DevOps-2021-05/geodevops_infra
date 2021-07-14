@@ -1,4 +1,4 @@
-variable cloud_id{
+variable cloud_id {
   description = "Cloud"
 }
 variable folder_id {
@@ -16,9 +16,12 @@ variable public_key_path {
 variable image_id {
   description = "Disk image"
 }
-variable subnet_id{
+variable subnet_id {
   description = "Subnet"
 }
-variable token{
+variable token {
   description = "token number"
+}
+variable ssh_key {
+  description = "file locations"
 }

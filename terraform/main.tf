@@ -1,5 +1,5 @@
 provider "yandex" {
-  token = var.token
+  token     = var.token
   cloud_id  = var.cloud_id
   folder_id = var.folder_id
   zone      = var.zone
@@ -28,17 +28,17 @@ resource "yandex_compute_instance" "app" {
   }
 
   connection {
-  type = "ssh"
-  host = yandex_compute_instance.app.network_interface.0.nat_ip_address
-  user = "ubuntu"
-  agent = false
-  private_key = file("~/.ssh/appuser")
+    type        = "ssh"
+    host        = yandex_compute_instance.app.network_interface.0.nat_ip_address
+    user        = "ubuntu"
+    agent       = false
+    private_key = file(var.ssh_key)
   }
 
   provisioner "file" {
-  source = "files/puma.service"
-  destination = "/tmp/puma.service"
-}
+    source      = "files/puma.service"
+    destination = "/tmp/puma.service"
+  }
   provisioner "remote-exec" {
     script = "files/deploy.sh"
   }
