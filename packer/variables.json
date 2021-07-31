@@ -1,0 +1,6 @@
+{
+  "myfolder_id": "b1g3bastprflpmc7m3a5",
+  "key_file": "/home/oleg/OTUS/kyes/packer/key.json",
+  "source_image_family": "ubuntu-1604-lts",
+  "subnet_id": "e9b6jsv5mc6ugbd2p385"
+}
