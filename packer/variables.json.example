@@ -1,4 +1,5 @@
 {
+    "key_file": "example.key.json",
     "myfolder_id": "1234567890cc40vndnc3",
     "key_file": "example.key.json",
     "source_image_family": "ubuntu-1604-lts",
